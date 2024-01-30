@@ -10,7 +10,7 @@ RSpec.describe 'Creating a book', type: :feature do
         fill_in "book[title]", with: 'Meditations'
         fill_in "book[author]", with: 'Marcus C.H.A.D. Aurelius'
         fill_in "book[price]", with: '19.99'
-        fill_in "book[date]", with: '2002-06-26'
+        fill_in "book[published_date]", with: '2002-06-26'
         click_on 'Create Book'
         visit books_path
         expect(page).to have_content('Meditations')
