@@ -14,7 +14,7 @@ require 'rails_helper'
 
 RSpec.describe Book, type: :model do
     subject do 
-        described_class.new(title: 'Meditations', author: 'Marcus C.H.A.D. Aurelius', price: 19.99, published_date: Date.new(2002, 6, 15))
+        described_class.new(title: 'Meditations', author: 'Marcus Aurelius', price: 19.99, published_date: Date.new(2002, 6, 15))
     end
 
     it 'is valid with valid attributes' do #validates :title, presence: true 
