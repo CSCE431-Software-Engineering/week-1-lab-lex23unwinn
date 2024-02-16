@@ -22,7 +22,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
   username: lex23unwin
-  password: lexunwin23
+  password: <%= ENV["TEST_APP_DATABASE_PASSWORD"] %>
 
 
 
@@ -86,5 +86,3 @@ test:
 production:
   <<: *default
   database: test_app_production
-  username: test_app
-  password: <%= ENV["TEST_APP_DATABASE_PASSWORD"] %>
