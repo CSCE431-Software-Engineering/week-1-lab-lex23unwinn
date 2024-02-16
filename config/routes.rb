@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       #member code block for the extra one i need, member not collection
     end
   end 
-
+  root "books#index"
 end
 
 
